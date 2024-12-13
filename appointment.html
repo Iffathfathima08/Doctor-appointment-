@@ -5,10 +5,11 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <title>Forms</title>
     <link rel="stylesheet" href="style.css" />
+   
   </head>
   <body>
     <h1>Doctor's Appointment Request form</h1>
-    <form action=" post">
+    <form  id="appointment-form">
       <h4>Name</h4>
       <div class="form-container">
         <div class="firstName">
@@ -17,7 +18,7 @@
         </div>
         <br />
         <div class="secondName">
-          <label for="name ">last name:</label>
+          <label for="name ">Last name:</label>
           <input type="text" name="name" placeholder="Enter your last name" />
         </div>
       </div>
@@ -91,6 +92,20 @@
       <h4>Preffered Appointment Date</h4>
 
       <div class="date-selector">
+        <label for="date">Date:</label>
+  <select id="date" name="date">
+    <!-- Options will be dynamically added by JavaScript -->
+  </select>
+        
+        <label for="day">Day:</label>
+        <select id="day" name="day">
+          <option value="1">Monday</option>
+          <option value="2">Tuesday</option>
+          <option value="3">Wednesday</option>
+          <option value="4">Thursday</option>
+          <option value="5">Friday</option>
+          <option value="6">Saturday</option>
+        </select>
         <label for="month">Month:</label>
         <select id="month" name="month">
           <option value="1">January</option>
@@ -106,15 +121,6 @@
           <option value="11">November</option>
           <option value="12">December</option>
         </select>
-        <label for="day">Day:</label>
-        <select id="day" name="day">
-          <option value="1">Monday</option>
-          <option value="2">Tuesday</option>
-          <option value="3">Wednesday</option>
-          <option value="4">Thursday</option>
-          <option value="5">Friday</option>
-          <option value="6">Saturday</option>
-        </select>
         <label for="year">Year:</label>
         <select id="year" name="year">
           <option value="1">2024</option>
@@ -124,6 +130,7 @@
           <option value="1">2028</option>
           <option value="1">2029</option>
         </select>
+        
       </div>
 
       <h4>What services are you intrested in?</h4>
@@ -139,5 +146,6 @@
       </div>
       <button>Submit</button>
     </form>
+    <script src="script.js"></script>
   </body>
 </html>

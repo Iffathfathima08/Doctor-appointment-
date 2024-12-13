@@ -6,11 +6,11 @@ body {
   padding: 0;
 }
 body {
-  background-image: url("bg.jpg"); /* Adjust the path to your image */
-  background-size: cover; /* Scale the image to cover the entire background */
-  background-repeat: no-repeat; /* Prevent the image from repeating */
-  background-position: center; /* Center the image */
-  background-attachment: fixed; /* Keep the image fixed while scrolling */
+  background-image: url("bg.jpg"); 
+  background-size: cover; 
+  background-repeat: no-repeat;
+  background-position: center; 
+  background-attachment: fixed; 
 }
 
 h1 {
@@ -30,13 +30,13 @@ form {
   padding: 20px;
   border-radius: 15px;
   box-shadow: 0px 4px 6px rgba(0, 0, 0, 0.1);
-  backdrop-filter: blur(10px); /* Apply blur effect */
+  backdrop-filter: blur(10px); 
   background-color: rgba(
     255,
     255,
     255,
     0.7
-  ); /* Transparent background to allow blur effect */
+  ); 
 }
 
 button {
@@ -54,7 +54,7 @@ button:hover {
   background-color: #5cb4ee;
 }
 
-/* Form Container */
+
 .form-container,
 .gender,
 .address-container,
@@ -73,11 +73,11 @@ button:hover {
 }
 
 .gender input[type="radio"] {
-  margin-right: 15px; /* Space between radio button and its label */
+  margin-right: 15px;
 }
 
 .gender label {
-  margin-right: 15px; /* Space between "Male" and "Female" labels */
+  margin-right: 15px; 
   color: #0e3d75;
 }
 
@@ -105,7 +105,7 @@ input[type="radio"] {
   margin-right: 10px;
 }
 
-/* Input Fields Below Labels */
+
 .firstName,
 .secondName,
 .phoneNumber,
@@ -168,4 +168,12 @@ textarea {
 button {
   border-radius: 15px;
   border: 2px solid #c2a9a8;
+}
+
+
+
+
+
+select{
+  background-color: rgb(232, 231, 253);
 }
