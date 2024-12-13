@@ -24,7 +24,3 @@ A simple web-based Doctor Appointment system that allows users to book appointme
 
 - Fill in the form and click **Submit**.
 - After submission, you'll be redirected to `success.html` confirming your appointment.
-
-## License
-
-MIT License
