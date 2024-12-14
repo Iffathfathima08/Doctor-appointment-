@@ -1,0 +1,179 @@
+body {
+  font-family: Arial, sans-serif;
+  background-color: #f4f9fc;
+  color: #333434;
+  margin: 0;
+  padding: 0;
+}
+body {
+  background-image: url("bg.jpg"); 
+  background-size: cover; 
+  background-repeat: no-repeat;
+  background-position: center; 
+  background-attachment: fixed; 
+}
+
+h1 {
+  color: #0e3d75;
+  text-align: center;
+  margin-top: 20px;
+}
+
+h4 {
+  color: #2f86c0;
+}
+
+form {
+  width: 50%;
+  margin: 20px auto;
+  background-color: #ffffff;
+  padding: 20px;
+  border-radius: 15px;
+  box-shadow: 0px 4px 6px rgba(0, 0, 0, 0.1);
+  backdrop-filter: blur(10px); 
+  background-color: rgba(
+    255,
+    255,
+    255,
+    0.7
+  ); 
+}
+
+button {
+  background-color: #0e3d75;
+  color: white;
+  border: none;
+  padding: 10px 20px;
+  cursor: pointer;
+  display: block;
+  margin: 20px auto;
+  border-radius: 5px;
+}
+
+button:hover {
+  background-color: #5cb4ee;
+}
+
+
+.form-container,
+.gender,
+.address-container,
+.date-selector,
+.text {
+  background-color: #ffffff;
+  padding: 15px;
+  border-radius: 15px;
+  box-shadow: 0px 4px 6px rgba(0, 0, 0, 0.1);
+  margin-bottom: 20px;
+}
+
+.gender {
+  display: flex;
+  width: 95%;
+}
+
+.gender input[type="radio"] {
+  margin-right: 15px;
+}
+
+.gender label {
+  margin-right: 15px; 
+  color: #0e3d75;
+}
+
+label {
+  display: block;
+  margin-bottom: 5px;
+}
+
+input[type="text"],
+input[type="number"],
+textarea,
+select {
+  width: 100%;
+  padding: 10px;
+  border: 1px solid #c2a9a8;
+  border-radius: 5px;
+  box-sizing: border-box;
+}
+
+textarea {
+  resize: vertical;
+}
+
+input[type="radio"] {
+  margin-right: 10px;
+}
+
+
+.firstName,
+.secondName,
+.phoneNumber,
+.email,
+.address-container div,
+.date-selector label,
+.text label {
+  margin-bottom: 20px;
+}
+
+.firstName label,
+.secondName label,
+.phoneNumber label,
+.email label,
+.Address label,
+.date-selector label,
+.text label {
+  color: #0e3d75;
+}
+
+input[type="text"],
+input[type="number"],
+textarea,
+select {
+  margin-top: 5px;
+}
+
+/* Phone and Email */
+.phoneNumber,
+.email {
+  width: 95%;
+}
+
+/* Address Section */
+.address-container {
+  flex-direction: column;
+}
+
+/* Date Selector */
+.date-selector {
+  flex-direction: column;
+}
+
+.date-selector label,
+.date-selector select {
+  width: 100%;
+  margin-bottom: 10px;
+}
+
+/* Textarea Section */
+.text {
+  flex-direction: column;
+}
+
+textarea {
+  border: 1px solid #c2a9a8;
+  padding: 5px;
+  border-radius: 7px;
+}
+button {
+  border-radius: 15px;
+  border: 2px solid #c2a9a8;
+}
+
+
+
+
+
+select{
+  background-color: rgb(232, 231, 253);
+}

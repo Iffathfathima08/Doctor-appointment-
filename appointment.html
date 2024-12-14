@@ -1,94 +1,151 @@
 <!DOCTYPE html>
 <html lang="en">
-<head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>forms</title>
-</head>
-<body>
-    <h1> Doctor's Appointment Request form</h1>
-    <form action=" post">
-       <h4> Name</h4> 
-        <label for="name ">first name:</label>
-        <input type="text" name="name" placeholder="enter your first name">
-        <label for="name ">last name:</label>
-        <input type="text" name="name" placeholder="enter your last name">
-    </form>
-    <div>
-        <h4>Gender</h4>
-        <input type="radio" id="male" name="gender" value="male">
-        <label for="male"> Male</label>
-        <input type="radio" id="female" name="gender" value="female">
-        <label for="female">Female</label>
-    </div>
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Forms</title>
+    <link rel="stylesheet" href="style.css" />
+   
+  </head>
+  <body>
+    <h1>Doctor's Appointment Request form</h1>
+    <form  id="appointment-form">
+      <h4>Name</h4>
+      <div class="form-container">
+        <div class="firstName">
+          <label for="name ">First name:</label>
+          <input type="text" name="name" placeholder="Enter your first name" />
+        </div>
+        <br />
+        <div class="secondName">
+          <label for="name ">Last name:</label>
+          <input type="text" name="name" placeholder="Enter your last name" />
+        </div>
+      </div>
 
-    <div> 
-        <h4> Phone Number</h4>
-        <label for="phone number ">please enter a valid phone number: </label>
-        <input type="number" phone number="phone number" placeholder="enter your phone number">
+      <div>
+        <h4>Gender</h4>
+        <div class="gender">
+          <input type="radio" id="male" name="gender" value="male" />
+          <label for="male"> Male</label>
+          <input type="radio" id="female" name="gender" value="female" />
+          <label for="female">Female</label>
+        </div>
+      </div>
+
+      <div class="form-container">
+        <div class="phoneNumber">
+          <h4>Phone Number</h4>
+          <label for="phone number "> </label>
+          <input
+            type="number"
+            phone
+            number="phone number"
+            placeholder="Enter your phone number"
+          />
+        </div>
+        <div class="email">
+          <h4>E-mail id</h4>
+          <label for="email "></label>
+          <input
+            type="text"
+            email="email id"
+            placeholder="Enter your valid email id "
+          />
+        </div>
+      </div>
+      <div class="address-container">
+        <div class="Address">
+          <h4>Address</h4>
+
+          <label for="street-address">Street Address: </label>
+          <input
+            type="text"
+            id="street-address"
+            name="address"
+            placeholder="Enter your address"
+          />
+
+          <br />
+          <br />
+
+          <label for="city-name">City Name: </label>
+          <input
+            type="text"
+            id="city-name"
+            name="city"
+            placeholder="Enter your city name"
+          />
+          <br />
+          <br />
+
+          <label for="country-name">Country: </label>
+          <input
+            type="text"
+            id="country-name"
+            name="country"
+            placeholder="Enter your country name"
+          />
+        </div>
+      </div>
+
+      <h4>Preffered Appointment Date</h4>
+
+      <div class="date-selector">
+        <label for="date">Date:</label>
+  <select id="date" name="date">
+    <!-- Options will be dynamically added by JavaScript -->
+  </select>
         
-    </div>
-    <div>
-        <h4>E-mail id</h4>
-        <label for="email ">please enter a valid  email id: </label>
-        <input type="text" email="email id" placeholder="enter your valid email id ">
-        
-    </div>
-    <div>
-        <h4> Address</h4>
-        <label for="address ">street address: </label>
-        <input type="text" address="address" placeholder="enter your address">
-        <label for="address ">street address line2: </label>
-        <input type="text" address="address" placeholder="enter your address">
-        <br>
-        <label for="address ">City name: </label>
-        <input type="text" address="address" placeholder="enter your city name">
-        <br>
-        <label for="address ">Country: </label>
-        <input type="text" address="address" placeholder="enter your country name">
-    </div>
-    <div> 
-        <h4>Preffered Appointment Date</h4>
-        <div class="date-selector">
-            <label for="month">Month:</label>
-            <select id="month" name="month">
-                <option value="1">January</option>
-                <option value="2">February</option>
-                <option value="3">March</option>
-                <option value="4">April</option>
-                <option value="5">May</option>
-                <option value="6">June</option>
-                <option value="7">July</option>
-                <option value="8">August</option>
-                <option value="9">September</option>
-                <option value="10">October</option>
-                <option value="11">November</option>
-                <option value="12">December</option>
-            </select>
-            <label for="day">Day:</label>
+        <label for="day">Day:</label>
         <select id="day" name="day">
-            <option value="1">Monday</option>
-                <option value="2">Tuesday</option>
-                <option value="3">Wednesday</option>
-                <option value="4">Thursday</option>
-                <option value="5">Friday</option>
-                <option value="6">Saturday</option>
+          <option value="1">Monday</option>
+          <option value="2">Tuesday</option>
+          <option value="3">Wednesday</option>
+          <option value="4">Thursday</option>
+          <option value="5">Friday</option>
+          <option value="6">Saturday</option>
+        </select>
+        <label for="month">Month:</label>
+        <select id="month" name="month">
+          <option value="1">January</option>
+          <option value="2">February</option>
+          <option value="3">March</option>
+          <option value="4">April</option>
+          <option value="5">May</option>
+          <option value="6">June</option>
+          <option value="7">July</option>
+          <option value="8">August</option>
+          <option value="9">September</option>
+          <option value="10">October</option>
+          <option value="11">November</option>
+          <option value="12">December</option>
         </select>
         <label for="year">Year:</label>
         <select id="year" name="year">
-            <option value="1">2024</option>
-            <option value="2">2025</option>
-
+          <option value="1">2024</option>
+          <option value="2">2025</option>
+          <option value="1">2026</option>
+          <option value="1">2027</option>
+          <option value="1">2028</option>
+          <option value="1">2029</option>
         </select>
-    </div>
+        
+      </div>
 
-    </div>
-    <div>
-        <h4>What services are you intrested in?</h4>
+      <h4>What services are you intrested in?</h4>
+      <div class="text">
         <label for=" comments"></label>
-        <br>
-        <textarea id="comments" name=" what are you intrested in?" rows="4" cols="50"></textarea>
-    </div>
-    
-</body>
+
+        <textarea
+          id="comments"
+          name=" what are you interested in?"
+          rows="4"
+          cols="50"
+        ></textarea>
+      </div>
+      <button>Submit</button>
+    </form>
+    <script src="script.js"></script>
+  </body>
 </html>
